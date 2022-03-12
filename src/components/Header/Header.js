@@ -16,7 +16,7 @@ const Header = () => {
           setMobileNavOpen={setMobileNavOpen}
         />
       </header>
-      <MobileNav mobileNavOpen={mobileNavOpen}/>
+      {mobileNavOpen && <MobileNav />}
     </>
   );
 };
