@@ -28,3 +28,5 @@ const MobileNav = ({ mobileNavOpen }) => {
         </>
     );
 };
+
+export default MobileNav;
