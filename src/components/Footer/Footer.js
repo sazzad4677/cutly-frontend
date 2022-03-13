@@ -23,13 +23,13 @@ const Footer = () => {
             <h2 className="mb-4 font-bold tracking-tight text-white">
               Features
             </h2>
-            <a href="#" className="text-neutral-gray hover:text-primary-cyan">
+            <a href="/" className="text-neutral-gray hover:text-primary-cyan">
               Link Shorting
             </a>
-            <a href="#" className="text-neutral-gray hover:text-primary-cyan">
+            <a href="/" className="text-neutral-gray hover:text-primary-cyan">
               Brand Links
             </a>
-            <a href="#" className="text-neutral-gray hover:text-primary-cyan">
+            <a href="/" className="text-neutral-gray hover:text-primary-cyan">
               Analytics
             </a>
           </div>
@@ -38,13 +38,13 @@ const Footer = () => {
             <h2 className="mb-4 font-bold tracking-tight text-white">
               Resources
             </h2>
-            <a href="#" className="text-neutral-gray  hover:text-primary-cyan">
+            <a href="/" className="text-neutral-gray  hover:text-primary-cyan">
               Blog
             </a>
-            <a href="#" className="text-neutral-gray  hover:text-primary-cyan">
+            <a href="/" className="text-neutral-gray  hover:text-primary-cyan">
               Developers
             </a>
-            <a href="#" className="text-neutral-gray  hover:text-primary-cyan">
+            <a href="/" className="text-neutral-gray  hover:text-primary-cyan">
               Support
             </a>
           </div>
@@ -52,16 +52,16 @@ const Footer = () => {
             <h2 className="mb-4 font-bold tracking-tight text-white">
               Company
             </h2>
-            <a href="#" className="text-neutral-gray  hover:text-primary-cyan">
+            <a href="/" className="text-neutral-gray  hover:text-primary-cyan">
               About
             </a>
-            <a href="#" className="text-neutral-gray  hover:text-primary-cyan">
+            <a href="/" className="text-neutral-gray  hover:text-primary-cyan">
               Our Team
             </a>
-            <a href="#" className="text-neutral-gray  hover:text-primary-cyan">
+            <a href="/" className="text-neutral-gray  hover:text-primary-cyan">
               Careers
             </a>
-            <a href="#" className="text-neutral-gray  hover:text-primary-cyan">
+            <a href="/" className="text-neutral-gray  hover:text-primary-cyan">
               Contact
             </a>
           </section>

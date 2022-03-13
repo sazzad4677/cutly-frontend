@@ -24,6 +24,25 @@ function App() {
         <button className="getStartedButton">Get Started</button>
       </section>
       <Footer />
+      <div className="attribution bg-neutral-bg p-3 text-center font-mono text-neutral-dark-violet">
+        Challenge by{" "}
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          className="text-primary-cyan underline"
+        >
+          Frontend Mentor
+        </a>
+        . Coded by{" "}
+        <a
+          href="https://github.com/sazzad4677/"
+          target="_blank"
+          className="text-primary-cyan underline"
+        >
+          Sazzad
+        </a>
+        .
+      </div>
     </div>
   );
 }
