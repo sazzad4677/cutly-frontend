@@ -6,7 +6,10 @@
   box-sizing: border-box;
 }
 
-
 html {
   scroll-behavior: smooth;
+}
+
+.bg-shorten-desktop {
+  background-image: url(./images/bg-shorten-mobile.svg);
 }

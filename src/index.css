@@ -15,5 +15,5 @@
 }
 
 .button {
-  @apply rounded-full h-11 mx-4 bg-primary-cyan text-white hover:bg-opacity-40 transition duration-500 ease-in-out;
+  @apply rounded-full h-11 mx-4 bg-primary-cyan text-white hover:bg-opacity-70 transition duration-500 ease-in-out;
 }
