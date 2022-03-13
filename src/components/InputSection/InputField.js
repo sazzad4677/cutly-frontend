@@ -37,7 +37,7 @@ const InputField = () => {
           </div>
           <button
             type="submit"
-            className="h-full w-full whitespace-nowrap rounded-lg bg-primary-cyan px-10 py-4 text-base font-bold text-white transition duration-500 ease-in-out hover:brightness-110 sm:w-auto"
+            className="h-full w-full whitespace-nowrap rounded-lg bg-primary-cyan px-10 py-4 text-base font-bold text-white transition duration-500 ease-in-out hover:brightness-110 sm:w-auto md:mt-6 lg:mt-0"
           >
             Shorten It!
           </button>
