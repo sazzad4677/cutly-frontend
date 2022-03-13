@@ -11,4 +11,9 @@
   --neutral-grayish-violet: 257, 7%, 63%;
   --neutral-very-dark-blue: 255, 11%, 22%;
   --neutral-very-dark-violet: 255, 11%, 22%;
+  --bg: 225, 33.33%, 95.29%;
+}
+
+.button {
+  @apply rounded-full h-11 mx-4 bg-primary-cyan text-white hover:bg-opacity-40 transition duration-500 ease-in-out;
 }

@@ -26,6 +26,7 @@ module.exports = {
           "grayish-violet": opacityCalculation("--neutral-grayish-violet"),
           "dark-blue": opacityCalculation("--neutral-very-dark-blue"),
           "dark-violet": opacityCalculation("--neutral-very-dark-violet"),
+          "bg" :opacityCalculation("--bg"),
         },
       },
       fontFamily: {
