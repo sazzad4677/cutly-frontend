@@ -17,3 +17,7 @@
 .button {
   @apply rounded-full h-11 mx-4 bg-primary-cyan text-white hover:bg-opacity-70 transition duration-500 ease-in-out;
 }
+
+.getStartedButton {
+  @apply my-6 rounded-full bg-primary-cyan px-9 py-3 font-bold text-white hover:bg-opacity-70
+}

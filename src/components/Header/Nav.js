@@ -2,13 +2,13 @@ import React from "react";
 
 const Nav = ({ setMobileNavOpen }) => {
   return (
-    <nav className="flex h-full items-center justify-end lg:justify-between flex-grow">
+    <nav className="flex h-full flex-grow items-center justify-end lg:justify-between">
       <ul className="ml-10 hidden lg:flex">
         {["Features", "Pricing", "Resources"].map((values, key) => (
           <li key={key}>
             <a
               href="/"
-              className="text-neutral-grayish-violet font-semibold mx-3 hover:text-neutral-dark-violet"
+              className="mx-3 font-semibold text-neutral-grayish-violet hover:text-neutral-dark-violet"
             >
               {values}
             </a>
@@ -16,10 +16,10 @@ const Nav = ({ setMobileNavOpen }) => {
         ))}
       </ul>
       <div className="hidden lg:inline-block">
-        <button className="rounded-full h-10 w-20 mx-4  font-semibold text-neutral-grayish-violet hover:text-neutral-dark-violet">
+        <button className="mx-4 h-10 w-20 rounded-full  font-semibold text-neutral-grayish-violet hover:text-neutral-dark-violet">
           Login
         </button>
-        <button className="rounded-full h-11 w-28 mx-4 bg-primary-cyan text-white hover:bg-opacity-40 transition duration-500 ease-in-out">
+        <button className="mx-4 h-11 w-28 rounded-full bg-primary-cyan text-white transition duration-500 ease-in-out hover:bg-opacity-40">
           Sign Up
         </button>
       </div>

@@ -13,3 +13,11 @@ html {
 .bg-shorten-desktop {
   background-image: url(./images/bg-shorten-mobile.svg);
 }
+
+.logo {
+  fill: #34313D;
+}
+
+.socialIcon svg path{
+  fill: #fff !important;
+}
