@@ -2,8 +2,8 @@ import React from "react";
 import {
   GrFacebook,
   GrInstagram,
-  GrTwitter,
   GrPinterest,
+  GrTwitter,
 } from "react-icons/gr";
 const Footer = () => {
   return (

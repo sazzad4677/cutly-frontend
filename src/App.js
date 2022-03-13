@@ -23,7 +23,7 @@ function App() {
         </h1>
         <button className="getStartedButton">Get Started</button>
       </section>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

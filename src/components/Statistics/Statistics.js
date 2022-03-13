@@ -6,7 +6,7 @@ import Customize from "../../images/icon-fully-customizable.svg";
 const Statistics = () => {
   return (
     <section className="bg-neutral-bg ">
-      <div className="md:container md:px-16 pb-20 md:pb-10">
+      <div className="pb-20 md:container md:px-16 md:pb-10">
         <div className="text-center font-mono md:px-6 md:pt-12 xl:px-0">
           <h2 className="mb-3 text-3xl font-bold tracking-normal md:text-4xl">
             Advanced Statistic

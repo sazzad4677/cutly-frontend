@@ -15,9 +15,9 @@ html {
 }
 
 .logo {
-  fill: #34313D;
+  fill: #34313d;
 }
 
-.socialIcon svg path{
+.socialIcon svg path {
   fill: #fff !important;
 }

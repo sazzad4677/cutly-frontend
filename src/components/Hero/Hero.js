@@ -13,15 +13,13 @@ const Hero = () => {
             Build your brand’s recognition and get detailed insights on how your
             links are performing
           </p>
-          <button className="getStartedButton">
-            Get Started
-          </button>
+          <button className="getStartedButton">Get Started</button>
         </div>
         <div className="h-full overflow-hidden sm:w-full md:self-end">
           <img
             src={Illustration}
             alt="illustration"
-            className="relative -right-28 w-screen overflow-hidden sm:-right-56 lg:-right-8 lg:h-auto md:-right-10"
+            className="relative -right-28 w-screen overflow-hidden sm:-right-56 md:-right-10 lg:-right-8 lg:h-auto"
           />
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const MobileNav = ({ mobileNavOpen }) => {
+const MobileNav = () => {
   return (
     <div className="absolute inset-x-0 z-20 mx-0 flex h-auto justify-center lg:hidden ">
       <nav className="sm:6/12 h-auto w-10/12 rounded-lg bg-neutral-dark-violet pb-4 transition-all">
