@@ -29,6 +29,7 @@ function App() {
         <a
           href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
+          rel="noreferrer"
           className="text-primary-cyan underline"
         >
           Frontend Mentor
@@ -37,6 +38,7 @@ function App() {
         <a
           href="https://github.com/sazzad4677/"
           target="_blank"
+          rel="noreferrer"
           className="text-primary-cyan underline"
         >
           Sazzad
