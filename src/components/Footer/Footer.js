@@ -48,7 +48,7 @@ const Footer = () => {
               Support
             </a>
           </div>
-          <section className="flex flex-col gap-y-2">
+          <div className="flex flex-col gap-y-2">
             <h2 className="mb-4 font-bold tracking-tight text-white">
               Company
             </h2>
@@ -64,7 +64,7 @@ const Footer = () => {
             <a href="/" className="text-neutral-gray  hover:text-primary-cyan">
               Contact
             </a>
-          </section>
+          </div>
         </div>
         <div className="mt-16 flex h-fit gap-x-5 md:mt-0">
           <a href="/">
