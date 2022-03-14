@@ -1,8 +1,10 @@
 import axios from "axios";
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 
-const InputField = () => {
+const InputField = ({ link, setLink }) => {
+  const [loading, setLoading] = useState(false);
+  const [serverError, setServerError] = useState("");
   const {
     register,
     handleSubmit,
@@ -11,11 +13,23 @@ const InputField = () => {
 
   const onSubmit = async (fieldData) => {
     try {
-      const {data}  = await axios.post("http://localhost:5000/shortUrls", {
+      setLoading(true);
+      const { data } = await axios.post("http://localhost:5000/shortUrls", {
         fullUrl: fieldData.link,
       });
+
+      setLink([
+        ...link,
+        {
+          data,
+        },
+      ]);
+      setLoading(false);
     } catch (err) {
-      console.log(err);
+      setLoading(false);
+      if (err.response) {
+        setServerError(err.response.data?.message);
+      }
     }
   };
   return (
@@ -43,14 +57,40 @@ const InputField = () => {
               placeholder="Shorten a link here..."
             />
             <p className="mt-1 mb-3 inline-block font-mono text-sm italic tracking-wide text-secondary-red sm:absolute lg:mb-0 lg:mt-16">
-              {errors.link?.message}
+              {serverError ? serverError : errors.link?.message}
             </p>
           </div>
           <button
             type="submit"
-            className="h-full w-full whitespace-nowrap rounded-lg bg-primary-cyan px-10 py-4 text-base font-bold text-white transition duration-500 ease-in-out hover:brightness-110 sm:w-auto md:mt-6 lg:mt-0"
+            className={`h-full w-full whitespace-nowrap rounded-lg bg-primary-cyan px-10 py-4 text-base font-bold text-white transition duration-500 ease-in-out hover:brightness-110 sm:w-auto md:mt-6 lg:mt-0 ${
+              loading && `cursor-not-allowed`
+            }`}
+            disabled={loading ? true : false}
           >
-            Shorten It!
+            {loading ? (
+              <svg
+                className="h-5 w-5 animate-spin text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  className="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                ></circle>
+                <path
+                  className="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                ></path>
+              </svg>
+            ) : (
+              "Shorten It!"
+            )}
           </button>
         </form>
       </div>

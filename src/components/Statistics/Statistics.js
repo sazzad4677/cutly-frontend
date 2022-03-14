@@ -17,10 +17,10 @@ const Statistics = () => {
           </p>
         </div>
         <div className="relative mt-0 flex flex-col gap-x-10 px-8 text-center md:flex-row md:px-0 md:text-left">
-          <hr className="absolute top-[35rem] left-1/2 z-10 mx-auto h-[45rem] w-3 -translate-x-1/2 -translate-y-1/2 bg-primary-cyan sm:top-[28rem] md:top-56 md:h-3 md:w-full" />
+          <div className="absolute top-[35rem] left-1/2 z-10 mx-auto h-[45rem] w-3 -translate-x-1/2 -translate-y-1/2 bg-primary-cyan sm:top-[28rem] md:top-56 md:h-3 md:w-full" />
           <div className="relative z-20 my-10 flex max-w-md flex-col items-center rounded-lg bg-white p-6 pt-0 md:my-20 md:items-start">
             <div className="relative -top-10 w-fit rounded-full bg-primary-violet p-6">
-              <img src={Brand} alt="ima" />
+              <img src={Brand} alt="Brand Logo" />
             </div>
             <div>
               <h2 className="font-mono text-xl font-bold text-neutral-dark-violet">
@@ -36,7 +36,7 @@ const Statistics = () => {
           {/* Detailed Records */}
           <div className="relative top-10 z-20 my-10 flex max-w-md flex-col items-center rounded-lg bg-white p-6 pt-0 md:my-20 md:items-start">
             <div className="relative -top-10 w-fit rounded-full bg-primary-violet p-6">
-              <img src={Records} alt="ima" />
+              <img src={Records} alt="Records Logo" />
             </div>
             <div>
               <h2 className="font-mono text-xl font-bold text-neutral-dark-violet">
@@ -52,7 +52,7 @@ const Statistics = () => {
           {/* Fully Customizable */}
           <div className="relative top-20 z-20 my-10 flex max-w-md flex-col items-center rounded-lg bg-white p-6 pt-0 md:my-20 md:items-start">
             <div className="relative -top-10 w-fit rounded-full bg-primary-violet p-6">
-              <img src={Customize} alt="ima" />
+              <img src={Customize} alt="Customize Logo" />
             </div>
             <div>
               <h2 className="font-mono text-xl font-bold text-neutral-dark-violet">
