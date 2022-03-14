@@ -11,23 +11,47 @@ import { useLocalStorage } from "../hooks/useLocalStorage";
 const MainPage = () => {
   const [link, setLink] = useLocalStorage("ShortLinks", []);
   return (
-    <div>
-      <Header />
-      <Hero />
-      <div className="bg-neutral-bg">
-        <InputField link={link} setLink={setLink} />
-        {link.length && (
-          <div className="container relative -top-12 mx-auto px-10 md:container md:px-16">
-            {link?.map((value, key) => (
-              <LinkList link={value} key={key} />
-            ))}
-          </div>
-        )}
-      </div>
-      <Statistics />
-      <Cta />
+    <>
+      <main>
+        <Header />
+        <Hero />
+        <div className="bg-neutral-bg">
+          <InputField link={link} setLink={setLink} />
+          {link.length && (
+            <div className="container relative -top-12 mx-auto px-10 md:container md:px-16">
+              {link?.map((value, key) => (
+                <LinkList link={value} key={key} />
+              ))}
+            </div>
+          )}
+        </div>
+        <Statistics />
+        <Cta />
+      </main>
       <Footer />
-    </div>
+      {/* Attribution */}
+      <div className="attribution bg-neutral-bg p-3 text-center font-mono text-neutral-dark-violet">
+        Challenge by{" "}
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          className="text-primary-cyan underline"
+          rel="noreferrer"
+        >
+          Frontend Mentor
+        </a>
+        . Coded by{" "}
+        <a
+          href="https://github.com/sazzad4677/"
+          target="_blank"
+          className="text-primary-cyan underline"
+          rel="noreferrer"
+        >
+          Sazzad
+        </a>
+        .
+      </div>
+    </>
   );
 };
 

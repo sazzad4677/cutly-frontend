@@ -1,32 +1,15 @@
 import "./App.css";
 import MainPage from "./pages/MainPage";
+import { Routes, Route, Link } from "react-router-dom";
+import HandleRedirect from "./pages/HandleRedirect";
 
 function App() {
   return (
     <div className="App">
-      <MainPage />
-      {/* Attribution */}
-      <div className="attribution bg-neutral-bg p-3 text-center font-mono text-neutral-dark-violet">
-        Challenge by{" "}
-        <a
-          href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
-          className="text-primary-cyan underline"
-          rel="noreferrer"
-        >
-          Frontend Mentor
-        </a>
-        . Coded by{" "}
-        <a
-          href="https://github.com/sazzad4677/"
-          target="_blank"
-          className="text-primary-cyan underline"
-          rel="noreferrer"
-        >
-          Sazzad
-        </a>
-        .
-      </div>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/:shortURL" element={<HandleRedirect />} />
+      </Routes>
     </div>
   );
 }
