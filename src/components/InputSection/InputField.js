@@ -1,12 +1,23 @@
+import axios from "axios";
 import React from "react";
 import { useForm } from "react-hook-form";
+
 const InputField = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+
+  const onSubmit = async (fieldData) => {
+    try {
+      const {data}  = await axios.post("http://localhost:5000/shortUrls", {
+        fullUrl: fieldData.link,
+      });
+    } catch (err) {
+      console.log(err);
+    }
+  };
   return (
     <section className="bg-neutral-bg ">
       <div className="mx-auto px-10 md:container md:px-16">

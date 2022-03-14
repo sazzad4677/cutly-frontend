@@ -3,6 +3,7 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import InputField from "./components/InputSection/InputField";
+import LinkList from "./components/LinkList/LinkList";
 import Statistics from "./components/Statistics/Statistics";
 import BgBoost from "./images/bg-boost-desktop.svg";
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Hero />
       <InputField />
+      <LinkList/>
       <Statistics />
       <section
         style={{
