@@ -14,10 +14,9 @@ const InputField = ({ link, setLink }) => {
   const onSubmit = async (fieldData) => {
     try {
       setLoading(true);
-      const { data } = await axios.post("http://localhost:5000/shortUrls", {
+      const { data } = await axios.post(`/shortUrls`, {
         fullUrl: fieldData.link,
       });
-
       setLink([
         ...link,
         {

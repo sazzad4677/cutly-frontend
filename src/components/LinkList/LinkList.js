@@ -10,8 +10,8 @@ const LinkList = ({ link }) => {
 
   return (
     <>
-      <div className="relative mt-3 flex w-full flex-col items-center gap-y-4 gap-x-6 rounded-md bg-white py-6 px-6 font-mono text-lg md:flex-row">
-        <p className="after:content w-full break-words after:absolute after:left-0 after:block after:h-2 after:w-full after:border-b md:after:hidden">
+      <div className="relative mt-3 flex w-full flex-col items-center gap-y-4 gap-x-6 rounded-md bg-white py-6 px-6 font-mono text-base md:flex-row">
+        <p className="after:content w-full break-words after:absolute after:left-0 after:block after:h-2 after:w-full after:border-b md:after:hidden truncate">
           {link.data?.url?.fullUrl}
         </p>
         <div className="flex w-full flex-col items-center justify-end gap-x-6 gap-y-4 md:flex-row md:items-center">

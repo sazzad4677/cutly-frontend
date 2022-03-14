@@ -9,7 +9,10 @@ const HandleRedirect = () => {
   useEffect(() => {
     async function getData() {
       try {
-        const { data } = await axios.get(`http://localhost:5000/${shortURL}`);
+        const { data } = await axios.get(`/${shortURL}`, {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          withCredentials: false,
+        });
         setDestination(data);
       } catch (error) {
         setError(error.message);
