@@ -16,16 +16,17 @@ const Nav = ({ setMobileNavOpen }) => {
         ))}
       </ul>
       <div className="hidden lg:inline-block">
-        <button className="mx-4 h-10 w-20 rounded-full  font-semibold text-neutral-grayish-violet hover:text-neutral-dark-violet">
+        <button className="mx-4 h-10 w-20 rounded-full  font-semibold text-neutral-grayish-violet hover:text-neutral-dark-violet" title="Login">
           Login
         </button>
-        <button className="mx-4 h-11 w-28 rounded-full bg-primary-cyan text-white transition duration-500 ease-in-out hover:bg-opacity-40">
+        <button className="mx-4 h-11 w-28 rounded-full bg-primary-cyan text-white transition duration-500 ease-in-out hover:bg-opacity-40" title="Register">
           Sign Up
         </button>
       </div>
       <button
         className="lg:hidden"
         onClick={() => setMobileNavOpen((prev) => !prev)}
+        title="navigation"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

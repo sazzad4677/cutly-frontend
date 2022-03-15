@@ -1,21 +1,20 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Loader from "../components/Loader/Loader";
+import NotAvailable from "./NotAvailable";
 
 const HandleRedirect = () => {
   const [destination, setDestination] = useState(null);
-  const [error, setError] = useState();
+  const [error, setError] = useState(false);
   const { shortURL } = useParams();
   useEffect(() => {
     async function getData() {
       try {
-        const { data } = await axios.get(`/${shortURL}`, {
-          'Content-Type': 'application/x-www-form-urlencoded',
-          withCredentials: false,
-        });
+        const { data } = await axios.get(`/api/${shortURL}`);
         setDestination(data);
       } catch (error) {
-        setError(error.message);
+        setError(error.response);
       }
     }
     getData();
@@ -26,7 +25,11 @@ const HandleRedirect = () => {
     }
   }, [destination]);
 
-  return <div></div>;
+  if (!destination && !error) {
+    return <Loader />;
+  }
+
+  return error && <NotAvailable />;
 };
 
 export default HandleRedirect;

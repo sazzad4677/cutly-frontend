@@ -12,7 +12,7 @@ const GetURLBoost = () => {
       <h1 className="text-3xl font-bold text-white md:text-4xl">
         Boost Your Links Today
       </h1>
-      <button className="getStartedButton">Get Started</button>
+      <button className="getStartedButton" title="Get Started">Get Started</button>
     </section>
   );
 };

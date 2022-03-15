@@ -14,7 +14,7 @@ const InputField = ({ link, setLink }) => {
   const onSubmit = async (fieldData) => {
     try {
       setLoading(true);
-      const { data } = await axios.post(`/shortUrls`, {
+      const { data } = await axios.post(`/api/shortUrls`, {
         fullUrl: fieldData.link,
       });
       setLink([
@@ -65,6 +65,7 @@ const InputField = ({ link, setLink }) => {
               loading && `cursor-not-allowed`
             }`}
             disabled={loading ? true : false}
+            title="Shorten URL"
           >
             {loading ? (
               <svg
