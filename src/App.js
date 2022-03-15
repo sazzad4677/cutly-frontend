@@ -1,7 +1,7 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import MainPage from "./pages/MainPage";
-import { Routes, Route, Link } from "react-router-dom";
 import HandleRedirect from "./pages/HandleRedirect";
+import MainPage from "./pages/MainPage";
 import NotAvailable from "./pages/NotAvailable";
 
 function App() {
