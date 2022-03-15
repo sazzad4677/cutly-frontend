@@ -22,7 +22,7 @@ const LinkList = ({ link }) => {
         <div className="flex w-full flex-col items-center justify-end gap-x-6 gap-y-4 md:flex-row md:items-center">
           <a
             href={`/`}
-            aria-label="Short URL"
+            title="Short URL"
             className="block w-full break-words text-primary-cyan hover:underline md:w-auto"
           >
             {link.data?.url?.shortUrl}

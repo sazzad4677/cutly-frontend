@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from "../components/Footer/Footer";
 import Cta from "../components/Cta/Cta";
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
 import InputField from "../components/InputSection/InputField";
@@ -30,14 +30,17 @@ const MainPage = () => {
       </main>
       <Footer />
       {/* Attribution */}
-      <div role="contentinfo" className="attribution bg-neutral-bg p-3 text-center font-mono text-neutral-dark-violet">
+      <div
+        role="contentinfo"
+        className="attribution bg-neutral-bg p-3 text-center font-mono text-neutral-dark-violet"
+      >
         Challenge by{" "}
         <a
           href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
           className="text-primary-cyan underline"
           rel="noreferrer"
-          aria-label="Logo"
+          title="Logo"
         >
           Frontend Mentor
         </a>
@@ -47,7 +50,7 @@ const MainPage = () => {
           target="_blank"
           className="text-primary-cyan underline"
           rel="noreferrer"
-          aria-label="Logo"
+          title="Logo"
         >
           Sazzad
         </a>

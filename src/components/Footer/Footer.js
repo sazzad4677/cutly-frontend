@@ -13,7 +13,7 @@ const Footer = () => {
           <a
             href="/"
             className="flex items-center justify-center text-4xl font-bold text-white md:justify-start"
-            aria-label="logo"
+            title="Site logo"
           >
             Shortly
           </a>
@@ -24,13 +24,25 @@ const Footer = () => {
             <h2 className="mb-4 font-bold tracking-tight text-white">
               Features
             </h2>
-            <a href="/" className="text-neutral-gray hover:text-primary-cyan" aria-label="Link shorting">
+            <a
+              href="/"
+              className="text-neutral-gray hover:text-primary-cyan"
+              title="Short the url"
+            >
               Link Shorting
             </a>
-            <a href="/" className="text-neutral-gray hover:text-primary-cyan" aria-label="brand Link">
+            <a
+              href="/"
+              className="text-neutral-gray hover:text-primary-cyan"
+              title="know the brand links"
+            >
               Brand Links
             </a>
-            <a href="/" className="text-neutral-gray hover:text-primary-cyan" aria-label="Analytics">
+            <a
+              href="/"
+              className="text-neutral-gray hover:text-primary-cyan"
+              title="Get analytics"
+            >
               Analytics
             </a>
           </div>
@@ -39,13 +51,25 @@ const Footer = () => {
             <h2 className="mb-4 font-bold tracking-tight text-white">
               Resources
             </h2>
-            <a href="/" className="text-neutral-gray  hover:text-primary-cyan" aria-label="Blog">
+            <a
+              href="/"
+              className="text-neutral-gray  hover:text-primary-cyan"
+              title="Get the blog"
+            >
               Blog
             </a>
-            <a href="/" className="text-neutral-gray  hover:text-primary-cyan" aria-label="Developers">
+            <a
+              href="/"
+              className="text-neutral-gray  hover:text-primary-cyan"
+              title="Know more about the blog"
+            >
               Developers
             </a>
-            <a href="/" className="text-neutral-gray  hover:text-primary-cyan" aria-label="Support">
+            <a
+              href="/"
+              className="text-neutral-gray  hover:text-primary-cyan"
+              title="Our Support"
+            >
               Support
             </a>
           </div>
@@ -53,31 +77,47 @@ const Footer = () => {
             <h2 className="mb-4 font-bold tracking-tight text-white">
               Company
             </h2>
-            <a href="/" className="text-neutral-gray  hover:text-primary-cyan" aria-label="About">
+            <a
+              href="/"
+              className="text-neutral-gray  hover:text-primary-cyan"
+              title="About"
+            >
               About
             </a>
-            <a href="/" className="text-neutral-gray  hover:text-primary-cyan" aria-label="Our Team">
+            <a
+              href="/"
+              className="text-neutral-gray  hover:text-primary-cyan"
+              title="Our Team"
+            >
               Our Team
             </a>
-            <a href="/" className="text-neutral-gray  hover:text-primary-cyan" aria-label="Careers">
+            <a
+              href="/"
+              className="text-neutral-gray  hover:text-primary-cyan"
+              title="Careers"
+            >
               Careers
             </a>
-            <a href="/" className="text-neutral-gray  hover:text-primary-cyan" aria-label="Contact" >
+            <a
+              href="/"
+              className="text-neutral-gray  hover:text-primary-cyan"
+              title="Contact"
+            >
               Contact
             </a>
           </div>
         </div>
         <div className="mt-16 flex h-fit gap-x-5 md:mt-0">
-          <a href="/" aria-label="Facebook">
+          <a href="/" title="Facebook">
             <GrFacebook className="h-6 w-6 text-white hover:text-primary-cyan" />
           </a>
-          <a href="/" aria-label="Instagram">
+          <a href="/" title="Instagram">
             <GrInstagram className="h-6 w-6 text-white  hover:text-primary-cyan" />
           </a>
-          <a href="/" aria-label="Twitter">
+          <a href="/" title="Twitter">
             <GrTwitter className="h-6 w-6 text-white  hover:text-primary-cyan" />
           </a>
-          <a href="/" aria-label="Pinterest">
+          <a href="/" title="Pinterest">
             <GrPinterest className="h-6 w-6 text-white hover:text-primary-cyan" />
           </a>
         </div>

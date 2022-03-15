@@ -7,7 +7,9 @@ const MobileNav = () => {
         <ul className="text-center font-mono text-lg font-semibold tracking-wide text-white">
           {["Features", "Pricing", "Resources"].map((values, key) => (
             <li className="my-6 " key={key}>
-              <a href="/" aria-label={values}>{values}</a>
+              <a href="/" title={values}>
+                {values}
+              </a>
             </li>
           ))}
         </ul>
