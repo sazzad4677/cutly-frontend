@@ -3,10 +3,14 @@ import React, { useState } from "react";
 const LinkList = ({ link }) => {
   const [copied, setCopied] = useState(false);
 
-  const handleCopyLink = (linkToCopy) => {
-    const siteLink = `https://cutly.netlify.app/${linkToCopy}`;
-    navigator.clipboard.writeText(siteLink);
-    setCopied(true);
+  const handleCopyLink = async (linkToCopy) => {
+    try {
+      const siteLink = `https://cutly.netlify.app/${linkToCopy}`;
+      await navigator.clipboard.writeText(siteLink);
+      setCopied(true);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
