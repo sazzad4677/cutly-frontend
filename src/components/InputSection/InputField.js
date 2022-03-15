@@ -9,6 +9,7 @@ const InputField = ({ link, setLink }) => {
     register,
     handleSubmit,
     formState: { errors },
+    reset
   } = useForm();
 
   const onSubmit = async (fieldData) => {
@@ -23,6 +24,7 @@ const InputField = ({ link, setLink }) => {
           data,
         },
       ]);
+      reset()
       setLoading(false);
     } catch (err) {
       setLoading(false);
