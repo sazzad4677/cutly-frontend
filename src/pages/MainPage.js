@@ -30,13 +30,14 @@ const MainPage = () => {
       </main>
       <Footer />
       {/* Attribution */}
-      <div className="attribution bg-neutral-bg p-3 text-center font-mono text-neutral-dark-violet">
+      <div role="contentinfo" className="attribution bg-neutral-bg p-3 text-center font-mono text-neutral-dark-violet">
         Challenge by{" "}
         <a
           href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
           className="text-primary-cyan underline"
           rel="noreferrer"
+          aria-label="Logo"
         >
           Frontend Mentor
         </a>
@@ -46,6 +47,7 @@ const MainPage = () => {
           target="_blank"
           className="text-primary-cyan underline"
           rel="noreferrer"
+          aria-label="Logo"
         >
           Sazzad
         </a>

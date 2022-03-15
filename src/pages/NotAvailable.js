@@ -14,6 +14,7 @@ const NotAvailable = () => {
             <a
               href="/"
               className="my-20 mx-0 inline-block rounded-full bg-primary-cyan px-20 py-2 text-white"
+              aria-label="Go Back Home"
             >
               Go to Home
             </a>

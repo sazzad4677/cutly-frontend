@@ -8,6 +8,7 @@ const Nav = ({ setMobileNavOpen }) => {
           <li key={key}>
             <a
               href="/"
+              aria-label={values}
               className="mx-3 font-semibold text-neutral-grayish-violet hover:text-neutral-dark-violet"
             >
               {values}

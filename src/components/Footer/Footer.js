@@ -13,6 +13,7 @@ const Footer = () => {
           <a
             href="/"
             className="flex items-center justify-center text-4xl font-bold text-white md:justify-start"
+            aria-label="logo"
           >
             Shortly
           </a>
@@ -23,13 +24,13 @@ const Footer = () => {
             <h2 className="mb-4 font-bold tracking-tight text-white">
               Features
             </h2>
-            <a href="/" className="text-neutral-gray hover:text-primary-cyan">
+            <a href="/" className="text-neutral-gray hover:text-primary-cyan" aria-label="Link shorting">
               Link Shorting
             </a>
-            <a href="/" className="text-neutral-gray hover:text-primary-cyan">
+            <a href="/" className="text-neutral-gray hover:text-primary-cyan" aria-label="brand Link">
               Brand Links
             </a>
-            <a href="/" className="text-neutral-gray hover:text-primary-cyan">
+            <a href="/" className="text-neutral-gray hover:text-primary-cyan" aria-label="Analytics">
               Analytics
             </a>
           </div>
@@ -38,13 +39,13 @@ const Footer = () => {
             <h2 className="mb-4 font-bold tracking-tight text-white">
               Resources
             </h2>
-            <a href="/" className="text-neutral-gray  hover:text-primary-cyan">
+            <a href="/" className="text-neutral-gray  hover:text-primary-cyan" aria-label="Blog">
               Blog
             </a>
-            <a href="/" className="text-neutral-gray  hover:text-primary-cyan">
+            <a href="/" className="text-neutral-gray  hover:text-primary-cyan" aria-label="Developers">
               Developers
             </a>
-            <a href="/" className="text-neutral-gray  hover:text-primary-cyan">
+            <a href="/" className="text-neutral-gray  hover:text-primary-cyan" aria-label="Support">
               Support
             </a>
           </div>
@@ -52,31 +53,31 @@ const Footer = () => {
             <h2 className="mb-4 font-bold tracking-tight text-white">
               Company
             </h2>
-            <a href="/" className="text-neutral-gray  hover:text-primary-cyan">
+            <a href="/" className="text-neutral-gray  hover:text-primary-cyan" aria-label="About">
               About
             </a>
-            <a href="/" className="text-neutral-gray  hover:text-primary-cyan">
+            <a href="/" className="text-neutral-gray  hover:text-primary-cyan" aria-label="Our Team">
               Our Team
             </a>
-            <a href="/" className="text-neutral-gray  hover:text-primary-cyan">
+            <a href="/" className="text-neutral-gray  hover:text-primary-cyan" aria-label="Careers">
               Careers
             </a>
-            <a href="/" className="text-neutral-gray  hover:text-primary-cyan">
+            <a href="/" className="text-neutral-gray  hover:text-primary-cyan" aria-label="Contact" >
               Contact
             </a>
           </div>
         </div>
         <div className="mt-16 flex h-fit gap-x-5 md:mt-0">
-          <a href="/">
+          <a href="/" aria-label="Facebook">
             <GrFacebook className="h-6 w-6 text-white hover:text-primary-cyan" />
           </a>
-          <a href="/">
+          <a href="/" aria-label="Instagram">
             <GrInstagram className="h-6 w-6 text-white  hover:text-primary-cyan" />
           </a>
-          <a href="/">
+          <a href="/" aria-label="Twitter">
             <GrTwitter className="h-6 w-6 text-white  hover:text-primary-cyan" />
           </a>
-          <a href="/">
+          <a href="/" aria-label="Pinterest">
             <GrPinterest className="h-6 w-6 text-white hover:text-primary-cyan" />
           </a>
         </div>
