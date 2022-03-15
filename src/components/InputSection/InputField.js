@@ -34,7 +34,7 @@ const InputField = ({ link, setLink }) => {
     }
   };
   return (
-    <section className="bg-neutral-bg ">
+    <div className="bg-neutral-bg">
       <div className="mx-auto px-10 md:container md:px-16">
         <form
           onSubmit={handleSubmit(onSubmit)}
@@ -96,7 +96,7 @@ const InputField = ({ link, setLink }) => {
           </button>
         </form>
       </div>
-    </section>
+    </div>
   );
 };
 

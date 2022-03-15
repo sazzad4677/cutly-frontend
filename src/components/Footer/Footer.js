@@ -7,7 +7,7 @@ import {
 } from "react-icons/gr";
 const Footer = () => {
   return (
-    <footer className="bg-neutral-dark-violet" role="contentinfo" >
+    <footer className="bg-neutral-dark-violet">
       <div className="container mx-auto flex flex-col flex-wrap items-center justify-between py-16 font-mono md:flex-row md:items-center md:px-16 lg:items-start">
         <div className="mx-auto mb-10 text-center md:mx-0 md:text-left">
           <a

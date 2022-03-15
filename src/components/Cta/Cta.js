@@ -9,9 +9,9 @@ const GetURLBoost = () => {
       }}
       className="bg-primary-violet bg-cover bg-center py-16 text-center font-mono"
     >
-      <h1 className="text-3xl font-bold text-white md:text-4xl">
+      <p className="text-3xl font-bold text-white md:text-4xl">
         Boost Your Links Today
-      </h1>
+      </p>
       <button className="getStartedButton" title="Get Started">
         Get Started
       </button>
