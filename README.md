@@ -12,6 +12,7 @@ This is a solution to the [Shortly URL shortening API Challenge challenge on Fro
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
