@@ -55,7 +55,7 @@ Users should be able to:
 - [Node JS](https://nodejs.org/en/)
 - [Express JS](https://expressjs.com/) - Web framework for Node.js
 - [MongoDB](https://www.mongodb.com/) - NoSQL database
-- [https://mongoosejs.com/](https://mongoosejs.com/) - Mongodb object modeling for node.js
+- [Mongoose js](https://mongoosejs.com/) - Mongodb object modeling for node.js
 
 ### What I learned
 
