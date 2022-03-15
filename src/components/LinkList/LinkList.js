@@ -4,7 +4,7 @@ const LinkList = ({ link }) => {
   const [copied, setCopied] = useState(false);
 
   const handleCopyLink = (linkToCopy) => {
-    const siteLink = `http://localhost:3000/${linkToCopy}`;
+    const siteLink = `https://cutly.netlify.app/${linkToCopy}`;
     navigator.clipboard.writeText(siteLink);
     setCopied(true);
   };
