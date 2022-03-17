@@ -33,7 +33,7 @@ Users should be able to:
 
 ### **Desktop View**
 
-![desktop view](./assets/cutlyDesktop.png)
+![desktop view](./assets/CutlyDesktopView.png)
 
 ### Links
 
