@@ -9,7 +9,13 @@ const Header = () => {
     <>
       <header className="container flex h-24 w-full items-center justify-between px-6 font-mono lg:px-16">
         <div className="logo">
-          <img src={Logo} className="h-8 flex-grow-0" alt="Logo" />
+        <a
+            href="/"
+            className="flex items-center justify-center text-[2.60rem] font-bold text-neutral-dark-violet md:justify-start"
+            title="Site logo"
+          >
+            Cutly
+          </a>
         </div>
         <Nav
           mobileNavOpen={mobileNavOpen}

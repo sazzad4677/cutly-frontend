@@ -13,9 +13,9 @@ const Footer = () => {
           <a
             href="/"
             className="flex items-center justify-center text-4xl font-bold text-white md:justify-start"
-            title="Site logo"
+            title="Cutly"
           >
-            Shortly
+            Cutly
           </a>
         </div>
         <div className="flex flex-col flex-wrap gap-x-24 gap-y-16 whitespace-nowrap text-center sm:flex-row sm:text-left lg:flex-nowrap">
